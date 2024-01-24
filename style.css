@@ -1,13 +1,46 @@
-.main {
-    color: red ;
+body {
+    background: linear-gradient(to bottom, #fff, #fff5e1);
+    border: 5px solid #fff; /* White border */
+    color: #333; /* Set the default font color to a dark gray */
+    font-family: 'Courier New', Courier, monospace; /* Choose your preferred font-family */
 }
 
-.A{
-    color:blue;
-}
-
-h1{
-    width: 400px;
+h1 {
+    color: #fff; /* White text */
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    width: 80%; /* Centered and 80% width */
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px; /* Reduced padding */
+    font-family: 'cursive', sans-serif; /* Cursive font */
+    text-align: center; /* Center the text within the header */
 }
+
+#main {
+    color: #333; /* Reset font color for the main paragraph */
+}
+
+img {
+    width: 300px; /* Slightly larger images */
+    display: block; /* Center images */
+    margin: 0 auto;
+    border: 5px solid #fff; /* White border for images */
+}
+
+#imageContainer {
+    text-align: center;
+}
+
+.framed-image {
+    width: 250px; /* Adjust image width as needed */
+    margin: 10px; /* Add margin for spacing between images */
+    border: 10px solid #000; /* White border for the picture frame effect */
+    border-radius: 10px; /* Rounded corners for the frame */
+}
+
+.circular-button {
+    border-radius: 50%; /* Circular buttons */
+    padding: 10px 20px; /* Adjust padding for circular buttons */
+    margin: 10px; /* Add margin for spacing */
+}
+
+/* Your existing CSS code */
