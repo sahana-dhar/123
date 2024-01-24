@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Yea!</title>
-    <link rel = "stylesheet" href = "style.css">
+    <title>Sahana Dhar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>KABOOM</h1>
-    <p id = 'main'>my name is rowley</p>
-    <p>due to some small fixable utility issues there was an explosion</p>
-    <p class = 'A'>DO NOT PANIC</p>
-    <button id = 'navigateButton'> YOLO </button>
+    <h1 id="header">Sahana Dhar</h1>
+    <p id='main'>Hi! My name is Sahana Dhar and I am a second-year Data Science and Behavioral Neuroscience Major.
+        I love coffee, dogs, reading, listening to music, and exploring Boston with my friends.
+    </p>
+    <ul>
+        <li>A slideshow of pictures</li>
+        <li>Visualizations from my personal projects</li>
+    </ul>
+
+    <div id="imageContainer">
+        <img src="hp.jpg" alt="My favorite book series" class="framed-image">
+        <img src="marvel.jpg" alt="My favorite movie franchise" class="framed-image">
+    </div>
+
+    <button id='navigateButton' class="circular-button">Click me!</button>
+    <button id='websiteButton' class="circular-button">Visit Website</button>
+
+    <div id="nameInputContainer">
+        <label for="nameInput">Enter Your Name:</label>
+        <input type="text" id="nameInput">
+        <button id="greetButton" class="circular-button">Say Hello</button>
+    </div>
+
+
     <script>
-        const navigateButton = document.getElementById('navigateButton')
-        navigateButton.addEventListener('click', function(){
-            window.location.href = 'https://www.google.com'
+        const navigateButton = document.getElementById('navigateButton');
+        const websiteButton = document.getElementById('websiteButton');
+        const mainParagraph = document.getElementById('main');
+        const greetButton = document.getElementById('greetButton');
+        const nameInput = document.getElementById('nameInput');
+        const header = document.getElementById('header');
+
+        navigateButton.addEventListener('click', function () {
+            // Change the text of the main paragraph on button click
+            mainParagraph.textContent = 'Here is my secret message xoxo';
+        });
+
+        websiteButton.addEventListener('click', function () {
+            // Redirect to the website when the second button is clicked
+            window.location.href = 'http://127.0.0.1:8050/';
+        });
+
+        greetButton.addEventListener('click', function () {
+            // Display a personalized greeting underneath the header
+            const userName = nameInput.value.trim();
+            if (userName !== '') {
+                header.insertAdjacentHTML('afterend', `<p>Hello, ${userName}!</p>`);
+            }
         });
     </script>
 </body>
+
 </html>
