@@ -14,8 +14,9 @@
         I love coffee, dogs, reading, listening to music, and exploring Boston with my friends.
     </p>
     <ul>
-        <li>A slideshow of pictures</li>
+        <li>Pictures of my dog</li>
         <li>Visualizations from my personal projects</li>
+        <li>Pictures of countries I have visited :)</li>
     </ul>
 
     <div id="imageContainer">
@@ -42,17 +43,14 @@
         const header = document.getElementById('header');
 
         navigateButton.addEventListener('click', function () {
-            // Change the text of the main paragraph on button click
             mainParagraph.textContent = 'Here is my secret message xoxo';
         });
 
         websiteButton.addEventListener('click', function () {
-            // Redirect to the website when the second button is clicked
-            window.location.href = 'http://127.0.0.1:8050/';
+            window.location.href = 'https://explore.org/livecams/oceans/pacific-aquarium-tropical-reef-camera';
         });
 
         greetButton.addEventListener('click', function () {
-            // Display a personalized greeting underneath the header
             const userName = nameInput.value.trim();
             if (userName !== '') {
                 header.insertAdjacentHTML('afterend', `<p>Hello, ${userName}!</p>`);
