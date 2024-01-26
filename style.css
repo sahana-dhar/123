@@ -1,29 +1,29 @@
 body {
     background: linear-gradient(to bottom, #fff, #fff5e1);
-    border: 5px solid #fff; /* White border */
-    color: #333; /* Set the default font color to a dark gray */
-    font-family: 'Courier New', Courier, monospace; /* Choose your preferred font-family */
+    border: 5px solid #fff; 
+    color: #333; 
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 h1 {
-    color: #fff; /* White text */
+    color: #fff; 
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    width: 80%; /* Centered and 80% width */
+    width: 80%;
     margin: 0 auto;
-    padding: 20px; /* Reduced padding */
-    font-family: 'cursive', sans-serif; /* Cursive font */
-    text-align: center; /* Center the text within the header */
+    padding: 20px; 
+    font-family: 'Verdana'; 
+    text-align: center; 
 }
 
 #main {
-    color: #333; /* Reset font color for the main paragraph */
+    color: #333; 
 }
 
 img {
-    width: 300px; /* Slightly larger images */
-    display: block; /* Center images */
+    width: 300px; 
+    display: block; 
     margin: 0 auto;
-    border: 5px solid #fff; /* White border for images */
+    border: 5px solid #fff; 
 }
 
 #imageContainer {
@@ -31,16 +31,27 @@ img {
 }
 
 .framed-image {
-    width: 250px; /* Adjust image width as needed */
-    margin: 10px; /* Add margin for spacing between images */
-    border: 10px solid #000; /* White border for the picture frame effect */
-    border-radius: 10px; /* Rounded corners for the frame */
+    width: 250px; 
+    margin: 10px; 
+    border: 10px solid #000; 
+    border-radius: 10px; 
 }
 
 .circular-button {
-    border-radius: 50%; /* Circular buttons */
-    padding: 10px 20px; /* Adjust padding for circular buttons */
-    margin: 10px; /* Add margin for spacing */
+    border-radius: 50%; 
+    padding: 10px 20px; 
+    margin: 10px; 
+    display: inline-block;
 }
 
-/* Your existing CSS code */
+#navigateButton,
+#websiteButton,
+#greetButton {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
